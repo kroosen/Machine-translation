@@ -11793,7 +11793,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">helper</span>
@@ -11811,6 +11811,22 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dataset Loaded
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -11824,7 +11840,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sample_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -11833,6 +11849,25 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>small_vocab_en Line 1:  new jersey is sometimes quiet during autumn , and it is snowy in april .
+small_vocab_fr Line 1:  new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
+small_vocab_en Line 2:  the united states is usually chilly during july , and it is usually freezing in november .
+small_vocab_fr Line 2:  les Ã©tats-unis est gÃ©nÃ©ralement froid en juillet , et il gÃ¨le habituellement en novembre .
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11850,7 +11885,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
@@ -11871,6 +11906,30 @@ div#notebook {
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1823250 English words.
+227 unique English words.
+10 Most common words in the English dataset:
+&#34;is&#34; &#34;,&#34; &#34;.&#34; &#34;in&#34; &#34;it&#34; &#34;during&#34; &#34;the&#34; &#34;but&#34; &#34;and&#34; &#34;sometimes&#34;
+
+1961295 French words.
+355 unique French words.
+10 Most common words in the French dataset:
+&#34;est&#34; &#34;.&#34; &#34;,&#34; &#34;en&#34; &#34;il&#34; &#34;les&#34; &#34;mais&#34; &#34;et&#34; &#34;la&#34; &#34;parfois&#34;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11897,7 +11956,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">project_tests</span> <span class="k">as</span> <span class="nn">tests</span>
@@ -11934,6 +11993,41 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Using TensorFlow backend.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;my&#39;: 4, &#39;short&#39;: 5, &#39;brown&#39;: 6, &#39;the&#39;: 1, &#39;this&#39;: 7, &#39;over&#39;: 8, &#39;dog&#39;: 9, &#39;lexicography&#39;: 10, &#39;a&#39;: 2, &#39;fox&#39;: 11, &#39;jove&#39;: 12, &#39;of&#39;: 13, &#39;lazy&#39;: 14, &#39;prize&#39;: 15, &#39;jumps&#39;: 16, &#39;won&#39;: 17, &#39;quick&#39;: 3, &#39;is&#39;: 18, &#39;by&#39;: 19, &#39;sentence&#39;: 20, &#39;study&#39;: 21}
+
+Sequence 1 in x
+  Input:  The quick brown fox jumps over the lazy dog .
+  Output: [1, 3, 6, 11, 16, 8, 1, 14, 9]
+Sequence 2 in x
+  Input:  By Jove , my quick study of lexicography won a prize .
+  Output: [19, 12, 4, 3, 21, 13, 10, 17, 2, 15]
+Sequence 3 in x
+  Input:  This is a short sentence .
+  Output: [7, 18, 2, 5, 20]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -11948,7 +12042,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11978,6 +12072,30 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sequence 1 in x
+  Input:  [ 1  3  6 11 16  8  1 14  9]
+  Output: [ 1  3  6 11 16  8  1 14  9  0]
+Sequence 2 in x
+  Input:  [19 12  4  3 21 13 10 17  2 15]
+  Output: [19 12  4  3 21 13 10 17  2 15]
+Sequence 3 in x
+  Input:  [ 7 18  2  5 20]
+  Output: [ 7 18  2  5 20  0  0  0  0  0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -11991,7 +12109,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -12022,6 +12140,22 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Data Preprocessed
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12044,7 +12178,7 @@ You will begin by training four relatively simple architectures.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">logits_to_text</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">):</span>
@@ -12066,6 +12200,22 @@ You will begin by training four relatively simple architectures.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>`logits_to_text` function loaded.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12080,7 +12230,7 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Inspecting the French vocabulary</span>
@@ -12096,7 +12246,7 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Set folder to save all future models into</span>
@@ -12112,7 +12262,7 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">GRU</span><span class="p">,</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">TimeDistributed</span>
@@ -12196,6 +12346,276 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Padded sequences shape: (137861, 21)
+Reshaped for model input: (137861, 21, 1)
+Shape of data fed to model.fit: (137861, 21, 1)
+Output sequence length fed to model.fit: 21
+Deleting history file if existing...
+Training model from scratch and saving as rnn_model1.h5
+Shape after GRU: (?, ?, 64).
+Shape after TD(Dense): (?, 21, 346).
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 21, 1)             0         
+_________________________________________________________________
+gru_1 (GRU)                  (None, 21, 64)            12672     
+_________________________________________________________________
+time_distributed_1 (TimeDist (None, 21, 346)           22490     
+_________________________________________________________________
+activation_1 (Activation)    (None, 21, 346)           0         
+=================================================================
+Total params: 35,162.0
+Trainable params: 35,162.0
+Non-trainable params: 0.0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="80d1475b-a7fa-4b8f-a6a8-aed7f06ee3b6"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#80d1475b-a7fa-4b8f-a6a8-aed7f06ee3b6');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d336ea71f9c64175b252ea5b7e4aa628"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="67b88b48-fb12-4e7c-945c-3f4e1563de0b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#67b88b48-fb12-4e7c-945c-3f4e1563de0b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c9737b66ab0142e2b8aa34d1871584dc"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="5428c2da-0b89-4f42-ad43-5d84c62ca91e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#5428c2da-0b89-4f42-ad43-5d84c62ca91e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "27f30680056947fca55b7fd552cbcaef"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="5e65974d-06e7-42a8-9124-980218258979"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#5e65974d-06e7-42a8-9124-980218258979');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "96120fa8d2b348fa8dc65a895f1b4d1c"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="60c9db8a-b66f-43e8-b5ba-0c0cd68f1c63"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#60c9db8a-b66f-43e8-b5ba-0c0cd68f1c63');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "324bae94c7184dacaf7fc6eecb32c116"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="be00a337-155d-4f68-8af3-2b410ef17360"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#be00a337-155d-4f68-8af3-2b410ef17360');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ed6c50ef22c2411daf369ed3c98cca4f"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="a80a1ca2-3afb-4b7f-b20b-62ab814a61af"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#a80a1ca2-3afb-4b7f-b20b-62ab814a61af');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8500b9d9cbee47ad9a9e7a0f6f267695"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="d57e29e6-46ed-48c6-889f-96fe5d26a25e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d57e29e6-46ed-48c6-889f-96fe5d26a25e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "f2c0b713595246a5917bf99c913a5da9"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="da9402ae-db3a-4017-a828-bc6b3ca678a3"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#da9402ae-db3a-4017-a828-bc6b3ca678a3');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "27f46b2845b14e1e944810a762e2f47e"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="99ad3cc3-e72b-4714-9da3-1bbfcad64d27"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#99ad3cc3-e72b-4714-9da3-1bbfcad64d27');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "664f646cf3ee42b980e0aa9e72dde840"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="cf8b05b9-c280-4ead-85e1-c7ebd9be1528"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#cf8b05b9-c280-4ead-85e1-c7ebd9be1528');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bf54c1cf242a40fcbda68b364541bf13"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+History file saved!
+new jersey est parfois calme en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12211,7 +12631,7 @@ You've turned the words into ids, but there's a better representation of a word.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers.embeddings</span> <span class="k">import</span> <span class="n">Embedding</span>
@@ -12293,6 +12713,282 @@ You've turned the words into ids, but there's a better representation of a word.
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Padded sequences shape: (137861, 21)
+Shape of data fed to model.fit: (137861, 21)
+Output sequence length fed to model.fit: 21
+Shape of data fed to model.fit: (137861, 21)
+Output sequence length fed to model.fit: 21
+Deleting history file if existing...
+Training model from scratch and saving as rnn_model2.h5
+Using input shape (21,)
+Shape of Model() inputs: (?, 21)
+Shape after word embedding: (?, 21, 32)
+Shape after GRU: (?, ?, 64)
+Shape after TD(Dense): (?, 21, 346)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_2 (InputLayer)         (None, 21)                0         
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 21, 32)            6400      
+_________________________________________________________________
+gru_2 (GRU)                  (None, 21, 64)            18624     
+_________________________________________________________________
+time_distributed_2 (TimeDist (None, 21, 346)           22490     
+_________________________________________________________________
+activation_2 (Activation)    (None, 21, 346)           0         
+=================================================================
+Total params: 47,514.0
+Trainable params: 47,514.0
+Non-trainable params: 0.0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="13997c87-67e0-4812-806e-845143662bb8"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#13997c87-67e0-4812-806e-845143662bb8');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "93788b0685fb4e9fb8108f34650d5f05"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="d0ad65be-e22c-4f81-b06e-b05153d1e58f"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d0ad65be-e22c-4f81-b06e-b05153d1e58f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "47868bec90ca4504b87e76b6e9485c53"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="f73300a3-85f1-49c4-b488-cb88dadcbdc5"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#f73300a3-85f1-49c4-b488-cb88dadcbdc5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "81a7b713a2d14cdd9b70848a306903f9"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="deb03ddd-c446-446c-b265-24a760b120ff"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#deb03ddd-c446-446c-b265-24a760b120ff');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bffe11eddd2a4c109838e721caf31a12"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="deaa3ded-74e3-4cc7-b26d-fdf48b1aa9c8"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#deaa3ded-74e3-4cc7-b26d-fdf48b1aa9c8');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "9d97ed036451459b9e16d042b2efca9a"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="dd197d6f-c74a-4353-965c-8ff8dbf24906"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#dd197d6f-c74a-4353-965c-8ff8dbf24906');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7a78befed6e440e48fb2c9eae3aa05b9"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="d2f4b5dd-29d6-4bc5-bb1e-3a2735ab84b3"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d2f4b5dd-29d6-4bc5-bb1e-3a2735ab84b3');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e471e2f1a23c48aa95caf5428687db81"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="7c55616b-b3b2-4b7a-80d7-7812f3d7915f"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#7c55616b-b3b2-4b7a-80d7-7812f3d7915f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "f15f62cbcf3f429884a639497a56cd2b"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="ff1261ca-c6d4-49f1-901a-f2bf736a0fc9"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#ff1261ca-c6d4-49f1-901a-f2bf736a0fc9');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "225d96ac59424d2ca7f244b73699bc29"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="339a0eab-613d-44b3-a2f7-1a28120ec320"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#339a0eab-613d-44b3-a2f7-1a28120ec320');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1647a95d68a94add89c8c0141a3bec8a"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="fd8f3dfc-32da-47c2-899c-373e859fcbdd"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#fd8f3dfc-32da-47c2-899c-373e859fcbdd');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7795cdf9511c461a92d9ebe5b77e7991"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+History file saved!
+new jersey est parfois calme en l&#39; et l&#39; il est en en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12307,7 +13003,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Bidirectional</span>
@@ -12397,6 +13093,291 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>--- Preprocessing
+	Padding English sequences to the max length of the french sequences
+	Padded English sequences shape: (137861, 21)
+Shape of data fed to model.fit: (137861, 21)
+Output sequence length fed to model.fit: 21
+Deleting history file if existing...
+Training model from scratch and saving as rnn_model3.h5
+Model compilation: received &#39;input_shape&#39;: (137861, 21)
+	Shape after Input: (TensorShape([Dimension(None), Dimension(21)]),)
+	Shape after Embedding: (?, 21, 32)
+	Shape after Bidirectional GRU: (?, ?, 128)
+	Shape after Bidirectional GRU: (?, ?, 128)
+	Shape after TD(Dense): (?, 21, 346)
+	Shape after Activation (softmax): (?, 21, 346)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_3 (InputLayer)         (None, 21)                0         
+_________________________________________________________________
+embedding_2 (Embedding)      (None, 21, 32)            6400      
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 21, 128)           37248     
+_________________________________________________________________
+bidirectional_2 (Bidirection (None, 21, 128)           74112     
+_________________________________________________________________
+time_distributed_3 (TimeDist (None, 21, 346)           44634     
+_________________________________________________________________
+activation_3 (Activation)    (None, 21, 346)           0         
+=================================================================
+Total params: 162,394.0
+Trainable params: 162,394.0
+Non-trainable params: 0.0
+_________________________________________________________________
+
+Model compiled!
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="ecf67ed4-9036-48ea-a50f-363079021d6c"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#ecf67ed4-9036-48ea-a50f-363079021d6c');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ce0861b97f234744a432b47c907f9fa4"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="3bff1142-763b-4283-b2ca-540a25af21c6"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#3bff1142-763b-4283-b2ca-540a25af21c6');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c1c4f96dd88e4a72b117ec253f1f5abf"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="2c445d7a-b225-49f0-9d5c-19ed6376833e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#2c445d7a-b225-49f0-9d5c-19ed6376833e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c27c4256133143158c9007cd9f9fd5f1"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="be089d47-cb5f-4ac5-a775-49fb8c4d6f2c"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#be089d47-cb5f-4ac5-a775-49fb8c4d6f2c');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bfa0ab54e748455c8b6270e131c8aeb8"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="98df8789-e26b-4138-a146-37f949db001b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#98df8789-e26b-4138-a146-37f949db001b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "2096392bf2894238864559b042f03657"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="7c656084-b1d2-4a0e-b489-e386dfc129f8"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#7c656084-b1d2-4a0e-b489-e386dfc129f8');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "3044b052cd6a47cb9fb6e0247df8f2b9"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="cdf77e5f-0169-488a-b492-9c6ae44648f3"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#cdf77e5f-0169-488a-b492-9c6ae44648f3');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6b4661fd58da472fbe633d573f146e79"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="be9c603c-f836-4fe1-9b1b-8bd4c44c75fd"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#be9c603c-f836-4fe1-9b1b-8bd4c44c75fd');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "faf75f7fcf7a44eabd9e0b1e80762f6f"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="93ec5ad0-dc89-4752-8a06-8a7f75b4ad47"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#93ec5ad0-dc89-4752-8a06-8a7f75b4ad47');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "395dd681d7524a9a9c27784ebf70c803"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="1f9b6930-6959-4757-8153-7fb56235cb10"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#1f9b6930-6959-4757-8153-7fb56235cb10');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "95a0ff08120645c18764bf57e0ec4e1d"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="cc583183-aa9d-41aa-9349-62d015551d3e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#cc583183-aa9d-41aa-9349-62d015551d3e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e1172b3b1873450291b0c49e137c118b"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+Model trained!
+Model saved!
+
+History file saved!
+new jersey est parfois calme pendant cours de et il est la en en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12411,7 +13392,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">RepeatVector</span>
@@ -12513,6 +13494,297 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>--- Preprocessing
+	Padding English sequences to the max length of the french sequences
+	Padded English sequences shape: (137861, 21)
+Shape of data fed to model.fit: (137861, 21)
+Output sequence length fed to model.fit: 21
+Deleting history file if existing...
+Training model from scratch and saving as rnn_model4.h5
+Model compilation: received &#39;input_shape&#39;: (137861, 21)
+	Shape after Input: (?, 21)
+	Shape after Embedding: (?, 21, 32)
+	Shape after bidirectional GRU: (?, 128)
+	Shape after RepeatVector: (?, 21, 128)
+	Shape after GRU: (?, ?, 128)
+	Shape after TD(Dense): (?, 21, 346)
+	Shape after Activation: (?, 21, 346)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_4 (InputLayer)         (None, 21)                0         
+_________________________________________________________________
+embedding_3 (Embedding)      (None, 21, 32)            6400      
+_________________________________________________________________
+bidirectional_3 (Bidirection (None, 21, 128)           37248     
+_________________________________________________________________
+bidirectional_4 (Bidirection (None, 128)               74112     
+_________________________________________________________________
+repeat_vector_1 (RepeatVecto (None, 21, 128)           0         
+_________________________________________________________________
+gru_7 (GRU)                  (None, 21, 128)           98688     
+_________________________________________________________________
+time_distributed_4 (TimeDist (None, 21, 346)           44634     
+_________________________________________________________________
+activation_4 (Activation)    (None, 21, 346)           0         
+=================================================================
+Total params: 261,082.0
+Trainable params: 261,082.0
+Non-trainable params: 0.0
+_________________________________________________________________
+
+Model compiled!
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="1fad6bd7-eb40-4bec-a6a0-611133bec532"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#1fad6bd7-eb40-4bec-a6a0-611133bec532');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ff8da3584e4448b6857f588592c21bda"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="db39221c-2421-445f-8be2-0d954bd06b5e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#db39221c-2421-445f-8be2-0d954bd06b5e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "f29208dbe23c493cbef1f038c8473579"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="7010c022-fb57-4001-b4fb-b3edf684aa54"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#7010c022-fb57-4001-b4fb-b3edf684aa54');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "edfbfb88e66a4e4caf3f23be12d3420b"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="bf50368a-cfd5-4375-9388-e465a67c3fca"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#bf50368a-cfd5-4375-9388-e465a67c3fca');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b8a3d4100182459fb4759c8a67b8877b"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="cffe30c9-40cf-4c3d-9d0c-77e97df7bd0d"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#cffe30c9-40cf-4c3d-9d0c-77e97df7bd0d');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a062e15e2d2c4e328bb535d7dfd1004e"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="e7c603b2-5136-4628-876f-12e1f94758ce"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#e7c603b2-5136-4628-876f-12e1f94758ce');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "889691a13365467287e797cf18f8d7fb"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="311e3545-1712-4eff-bbba-a03663511809"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#311e3545-1712-4eff-bbba-a03663511809');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "fa1722efd127425bb740e5020947d046"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="17d6b1e1-5c57-4043-9e22-af12b88b33bf"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#17d6b1e1-5c57-4043-9e22-af12b88b33bf');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0a3c51636f4a4d468b2281ea33d9a988"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="31a94d6e-f219-41fc-a66b-632b22ac4753"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#31a94d6e-f219-41fc-a66b-632b22ac4753');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7170a08336d24ddabb88cfd9fe111d6d"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="effab88b-7c96-4b59-8fa2-0d382b6a6dd1"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#effab88b-7c96-4b59-8fa2-0d382b6a6dd1');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5cf2ef39807b443fb27dcd1ed0ffb048"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+
+
+ 
+ 
+<div id="d2c80c0a-f944-47e8-ac8b-03bc6c5ff57b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d2c80c0a-f944-47e8-ac8b-03bc6c5ff57b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d340513ab5954d4f9bd0568e59066e06"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+Model trained!
+
+Model saved!
+
+History file saved!
+new jersey est parfois agrã©able pendant l&#39; et il est est en en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12526,7 +13798,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Dropout</span>
@@ -12649,21 +13921,21 @@ Shape after TD(Dense): (?, 21, 346)
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_7 (InputLayer)         (None, 21)                0         
+input_5 (InputLayer)         (None, 21)                0         
 _________________________________________________________________
-embedding_6 (Embedding)      (None, 21, 32)            6400      
+embedding_4 (Embedding)      (None, 21, 32)            6400      
 _________________________________________________________________
-bidirectional_9 (Bidirection (None, 21, 512)           443904    
+bidirectional_5 (Bidirection (None, 21, 512)           443904    
 _________________________________________________________________
-bidirectional_10 (Bidirectio (None, 256)               492288    
+bidirectional_6 (Bidirection (None, 256)               492288    
 _________________________________________________________________
-repeat_vector_4 (RepeatVecto (None, 21, 256)           0         
+repeat_vector_2 (RepeatVecto (None, 21, 256)           0         
 _________________________________________________________________
-gru_16 (GRU)                 (None, 21, 256)           393984    
+gru_10 (GRU)                 (None, 21, 256)           393984    
 _________________________________________________________________
-time_distributed_7 (TimeDist (None, 21, 346)           88922     
+time_distributed_5 (TimeDist (None, 21, 346)           88922     
 _________________________________________________________________
-activation_7 (Activation)    (None, 21, 346)           0         
+activation_5 (Activation)    (None, 21, 346)           0         
 =================================================================
 Total params: 1,425,498.0
 Trainable params: 1,425,498.0
@@ -12683,13 +13955,13 @@ Model compiled!
 
  
  
-<div id="d8201c12-2b61-4022-a902-9d04eb4e39ce"></div>
+<div id="57b7ba34-3cf5-4d13-a050-5c21786521b5"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#d8201c12-2b61-4022-a902-9d04eb4e39ce');
+var element = $('#57b7ba34-3cf5-4d13-a050-5c21786521b5');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "c6ebfbcd32994dfca6278bda15b75a74"}
+{"model_id": "1ed6b8554a154eca8dbd9e0ed3a5b950"}
 </script>
 </div>
 
@@ -12703,13 +13975,13 @@ var element = $('#d8201c12-2b61-4022-a902-9d04eb4e39ce');
 
  
  
-<div id="1c22c340-1723-4034-a604-55e06c409c2a"></div>
+<div id="d8c2a5ee-965b-429d-8e67-58c2ab37bf02"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#1c22c340-1723-4034-a604-55e06c409c2a');
+var element = $('#d8c2a5ee-965b-429d-8e67-58c2ab37bf02');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "8070c8677e994bde99cd6e50f939f275"}
+{"model_id": "03f48ccbb49e4610a306043cdc5aa871"}
 </script>
 </div>
 
@@ -12723,13 +13995,13 @@ var element = $('#1c22c340-1723-4034-a604-55e06c409c2a');
 
  
  
-<div id="2372d4e2-ddaf-4bf7-81ba-e95eae0183dc"></div>
+<div id="725bfe67-dfbb-4a93-a535-67db4d363f80"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#2372d4e2-ddaf-4bf7-81ba-e95eae0183dc');
+var element = $('#725bfe67-dfbb-4a93-a535-67db4d363f80');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "5276e1fdc7fa4860a2270aecdc5c1fc4"}
+{"model_id": "a7f5bf05f5f94ba5be441e54dde01c84"}
 </script>
 </div>
 
@@ -12743,13 +14015,13 @@ var element = $('#2372d4e2-ddaf-4bf7-81ba-e95eae0183dc');
 
  
  
-<div id="bf689f64-e2a4-4bb0-87f5-e6dee360d3ad"></div>
+<div id="16d70033-72cc-40c9-9179-136407b73e06"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#bf689f64-e2a4-4bb0-87f5-e6dee360d3ad');
+var element = $('#16d70033-72cc-40c9-9179-136407b73e06');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "bfa0d9e750b44d2fb520a9418e4825b9"}
+{"model_id": "76e695f1c54949e7833ea1b35338b118"}
 </script>
 </div>
 
@@ -12763,13 +14035,13 @@ var element = $('#bf689f64-e2a4-4bb0-87f5-e6dee360d3ad');
 
  
  
-<div id="0c412428-eddc-421c-bf3b-667b68e8b35c"></div>
+<div id="905c1bd9-9e29-4f27-874b-14265104fc80"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#0c412428-eddc-421c-bf3b-667b68e8b35c');
+var element = $('#905c1bd9-9e29-4f27-874b-14265104fc80');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "9b0c2c4a05ea4facbf209cfee200230f"}
+{"model_id": "dad9514270d14a2292228287c2122d4a"}
 </script>
 </div>
 
@@ -12783,13 +14055,13 @@ var element = $('#0c412428-eddc-421c-bf3b-667b68e8b35c');
 
  
  
-<div id="352369af-e632-4843-a0fd-2f3b3e8e514a"></div>
+<div id="66a79394-1639-4f42-8c79-6001acdab2b4"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#352369af-e632-4843-a0fd-2f3b3e8e514a');
+var element = $('#66a79394-1639-4f42-8c79-6001acdab2b4');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "c1616622955d4e29b2fe69c64d522444"}
+{"model_id": "b57e92d56ecf41aa890c7c63a68a8d2f"}
 </script>
 </div>
 
@@ -12803,13 +14075,13 @@ var element = $('#352369af-e632-4843-a0fd-2f3b3e8e514a');
 
  
  
-<div id="5d533251-1b3b-443f-9709-d5b20b588848"></div>
+<div id="d0547c9a-c624-4226-b4cd-bd96303343ff"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#5d533251-1b3b-443f-9709-d5b20b588848');
+var element = $('#d0547c9a-c624-4226-b4cd-bd96303343ff');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "0f5a39eb1a754a708a6758803292b39b"}
+{"model_id": "6c7d881cd3574dda97f4c75641481bfc"}
 </script>
 </div>
 
@@ -12823,13 +14095,13 @@ var element = $('#5d533251-1b3b-443f-9709-d5b20b588848');
 
  
  
-<div id="0eae7057-968c-42e4-8f52-978fd64d4505"></div>
+<div id="90115293-51ef-4785-8964-58bf750f16cf"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#0eae7057-968c-42e4-8f52-978fd64d4505');
+var element = $('#90115293-51ef-4785-8964-58bf750f16cf');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "66e3386fe81a4238b22a45a98b9ff51d"}
+{"model_id": "37ec9e25546e4e83924dcc17c24bf491"}
 </script>
 </div>
 
@@ -12843,13 +14115,13 @@ var element = $('#0eae7057-968c-42e4-8f52-978fd64d4505');
 
  
  
-<div id="c2908d25-f71c-4888-a202-fe343ce2ef38"></div>
+<div id="6e1132a6-838f-4642-aada-a7260a0d4846"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#c2908d25-f71c-4888-a202-fe343ce2ef38');
+var element = $('#6e1132a6-838f-4642-aada-a7260a0d4846');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d0ca6d279721456085ebe23b389fa1fc"}
+{"model_id": "cdc198a373f1458aa2f35c22517d0714"}
 </script>
 </div>
 
@@ -12863,13 +14135,13 @@ var element = $('#c2908d25-f71c-4888-a202-fe343ce2ef38');
 
  
  
-<div id="cc879482-451c-4bf8-9f61-8fb75d1b5435"></div>
+<div id="63fbaed3-dc10-4140-8346-455198ee436e"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#cc879482-451c-4bf8-9f61-8fb75d1b5435');
+var element = $('#63fbaed3-dc10-4140-8346-455198ee436e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "5a3f73155d3843959a436ef079d9776f"}
+{"model_id": "0ffe24b026eb4bf99a4ba93758b5c5fd"}
 </script>
 </div>
 
@@ -12883,13 +14155,13 @@ var element = $('#cc879482-451c-4bf8-9f61-8fb75d1b5435');
 
  
  
-<div id="e44d3f45-7365-41f6-a880-e6c42f26974d"></div>
+<div id="dfbe9ef5-f0f6-414c-85cd-208a7f9edbfa"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#e44d3f45-7365-41f6-a880-e6c42f26974d');
+var element = $('#dfbe9ef5-f0f6-414c-85cd-208a7f9edbfa');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "113c1ca6651242b6af5dc30018e48d56"}
+{"model_id": "b35dfa55d7954998a865ed37c496bee7"}
 </script>
 </div>
 
@@ -12926,7 +14198,7 @@ new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13002,21 +14274,21 @@ new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-input_7 (InputLayer)         (None, 21)                0         
+input_5 (InputLayer)         (None, 21)                0         
 _________________________________________________________________
-embedding_6 (Embedding)      (None, 21, 32)            6400      
+embedding_4 (Embedding)      (None, 21, 32)            6400      
 _________________________________________________________________
-bidirectional_9 (Bidirection (None, 21, 512)           443904    
+bidirectional_5 (Bidirection (None, 21, 512)           443904    
 _________________________________________________________________
-bidirectional_10 (Bidirectio (None, 256)               492288    
+bidirectional_6 (Bidirection (None, 256)               492288    
 _________________________________________________________________
-repeat_vector_4 (RepeatVecto (None, 21, 256)           0         
+repeat_vector_2 (RepeatVecto (None, 21, 256)           0         
 _________________________________________________________________
-gru_16 (GRU)                 (None, 21, 256)           393984    
+gru_10 (GRU)                 (None, 21, 256)           393984    
 _________________________________________________________________
-time_distributed_7 (TimeDist (None, 21, 346)           88922     
+time_distributed_5 (TimeDist (None, 21, 346)           88922     
 _________________________________________________________________
-activation_7 (Activation)    (None, 21, 346)           0         
+activation_5 (Activation)    (None, 21, 346)           0         
 =================================================================
 Total params: 1,425,498.0
 Trainable params: 1,425,498.0
@@ -13038,7 +14310,7 @@ new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Clean data and present in a nice way</span>
